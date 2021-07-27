@@ -1,15 +1,15 @@
-2021-07-25 14:32:51,800 [1] INFO  - Loaded appender: FileAppenderInternal
-2021-07-25 14:32:51,830 [1] INFO  - Loaded appender: FileAppenderExternal
-2021-07-25 14:32:51,830 [1] INFO  - Loaded appender: UserLoggerAppender
-2021-07-25 14:32:51,831 [1] INFO  - Loaded appender: FileAppenderInternal
-2021-07-25 14:32:51,831 [1] INFO  - Loaded appender: FileAppenderExternal
-2021-07-25 14:32:51,832 [1] INFO  - Loaded appender: UserLoggerAppender
-2021-07-25 14:32:53,520 [9] INFO  - Step 'Start' : Step 'Start' started
-2021-07-25 14:32:53,605 [9] INFO  - Step 'Start' ended successfully
-2021-07-25 14:32:53,616 [9] INFO  - Step 'Test Flow' : Step 'Test Flow' started
-2021-07-25 14:32:53,628 [9] INFO  - Step 'Iteration 1' : Step 'Iteration 1' started
-2021-07-25 14:32:53,632 [9] INFO  - Step 'GetFlights' : Step 'GetFlights' started
-2021-07-25 14:32:53,663 [9] INFO  - 
+2021-07-27 18:21:48,374 [1] INFO  - Loaded appender: FileAppenderInternal
+2021-07-27 18:21:48,403 [1] INFO  - Loaded appender: FileAppenderExternal
+2021-07-27 18:21:48,404 [1] INFO  - Loaded appender: UserLoggerAppender
+2021-07-27 18:21:48,404 [1] INFO  - Loaded appender: FileAppenderInternal
+2021-07-27 18:21:48,405 [1] INFO  - Loaded appender: FileAppenderExternal
+2021-07-27 18:21:48,405 [1] INFO  - Loaded appender: UserLoggerAppender
+2021-07-27 18:21:49,646 [9] INFO  - Step 'Start' : Step 'Start' started
+2021-07-27 18:21:49,750 [9] INFO  - Step 'Start' ended successfully
+2021-07-27 18:21:49,758 [9] INFO  - Step 'Test Flow' : Step 'Test Flow' started
+2021-07-27 18:21:49,775 [9] INFO  - Step 'Iteration 1' : Step 'Iteration 1' started
+2021-07-27 18:21:49,779 [9] INFO  - Step 'GetFlights' : Step 'GetFlights' started
+2021-07-27 18:21:49,816 [9] INFO  - 
 Request:
 
 <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
@@ -22,9 +22,9 @@ Request:
   </Body>
 </Envelope>
 
-2021-07-25 14:32:53,947 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
-2021-07-25 14:32:54,139 [9] INFO  - Returning the response to the previous channel
-2021-07-25 14:32:54,146 [9] INFO  - 
+2021-07-27 18:21:50,058 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
+2021-07-27 18:21:50,244 [9] INFO  - Returning the response to the previous channel
+2021-07-27 18:21:50,251 [9] INFO  - 
 Response:
 
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -126,10 +126,10 @@ Response:
   </s:Body>
 </s:Envelope>
 
-2021-07-25 14:32:54,189 [9] INFO  - Structural Validation: True
-2021-07-25 14:32:54,200 [9] INFO  - Step 'GetFlights' ended successfully
-2021-07-25 14:32:54,203 [9] INFO  - Step 'CreateFlightOrder' : Step 'CreateFlightOrder' started
-2021-07-25 14:32:54,208 [9] INFO  - 
+2021-07-27 18:21:50,294 [9] INFO  - Structural Validation: True
+2021-07-27 18:21:50,304 [9] INFO  - Step 'GetFlights' ended successfully
+2021-07-27 18:21:50,307 [9] INFO  - Step 'CreateFlightOrder' : Step 'CreateFlightOrder' started
+2021-07-27 18:21:50,315 [9] INFO  - 
 Request:
 
 <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
@@ -146,28 +146,28 @@ Request:
   </Body>
 </Envelope>
 
-2021-07-25 14:32:54,213 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
-2021-07-25 14:32:54,248 [9] INFO  - Returning the response to the previous channel
-2021-07-25 14:32:54,251 [9] INFO  - 
+2021-07-27 18:21:50,320 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
+2021-07-27 18:21:50,353 [9] INFO  - Returning the response to the previous channel
+2021-07-27 18:21:50,356 [9] INFO  - 
 Response:
 
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Body>
     <CreateFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
       <CreateFlightOrderResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-        <OrderNumber>745</OrderNumber>
+        <OrderNumber>793</OrderNumber>
         <TotalPrice>1794.7</TotalPrice>
       </CreateFlightOrderResult>
     </CreateFlightOrderResponse>
   </s:Body>
 </s:Envelope>
 
-2021-07-25 14:32:54,259 [9] INFO  - Structural Validation: True
-2021-07-25 14:32:54,267 [9] INFO  - Step 'CreateFlightOrder' ended successfully
-2021-07-25 14:32:54,271 [9] INFO  - Step 'Iteration 1' ended successfully
-2021-07-25 14:32:54,273 [9] INFO  - Step 'Iteration 2' : Step 'Iteration 2' started
-2021-07-25 14:32:54,279 [9] INFO  - Step 'GetFlights' : Step 'GetFlights' started
-2021-07-25 14:32:54,282 [9] INFO  - 
+2021-07-27 18:21:50,364 [9] INFO  - Structural Validation: True
+2021-07-27 18:21:50,370 [9] INFO  - Step 'CreateFlightOrder' ended successfully
+2021-07-27 18:21:50,374 [9] INFO  - Step 'Iteration 1' ended successfully
+2021-07-27 18:21:50,381 [9] INFO  - Step 'Iteration 2' : Step 'Iteration 2' started
+2021-07-27 18:21:50,385 [9] INFO  - Step 'GetFlights' : Step 'GetFlights' started
+2021-07-27 18:21:50,389 [9] INFO  - 
 Request:
 
 <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
@@ -180,9 +180,9 @@ Request:
   </Body>
 </Envelope>
 
-2021-07-25 14:32:54,287 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
-2021-07-25 14:32:54,294 [9] INFO  - Returning the response to the previous channel
-2021-07-25 14:32:54,297 [9] INFO  - 
+2021-07-27 18:21:50,393 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
+2021-07-27 18:21:50,401 [9] INFO  - Returning the response to the previous channel
+2021-07-27 18:21:50,405 [9] INFO  - 
 Response:
 
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -284,10 +284,10 @@ Response:
   </s:Body>
 </s:Envelope>
 
-2021-07-25 14:32:54,306 [9] INFO  - Structural Validation: True
-2021-07-25 14:32:54,311 [9] INFO  - Step 'GetFlights' ended successfully
-2021-07-25 14:32:54,395 [9] INFO  - Step 'CreateFlightOrder' : Step 'CreateFlightOrder' started
-2021-07-25 14:32:54,407 [9] INFO  - 
+2021-07-27 18:21:50,417 [9] INFO  - Structural Validation: True
+2021-07-27 18:21:50,422 [9] INFO  - Step 'GetFlights' ended successfully
+2021-07-27 18:21:50,425 [9] INFO  - Step 'CreateFlightOrder' : Step 'CreateFlightOrder' started
+2021-07-27 18:21:50,431 [9] INFO  - 
 Request:
 
 <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
@@ -304,28 +304,28 @@ Request:
   </Body>
 </Envelope>
 
-2021-07-25 14:32:54,413 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
-2021-07-25 14:32:54,432 [9] INFO  - Returning the response to the previous channel
-2021-07-25 14:32:54,435 [9] INFO  - 
+2021-07-27 18:21:50,436 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
+2021-07-27 18:21:50,452 [9] INFO  - Returning the response to the previous channel
+2021-07-27 18:21:50,456 [9] INFO  - 
 Response:
 
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Body>
     <CreateFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
       <CreateFlightOrderResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-        <OrderNumber>746</OrderNumber>
+        <OrderNumber>794</OrderNumber>
         <TotalPrice>1794.7</TotalPrice>
       </CreateFlightOrderResult>
     </CreateFlightOrderResponse>
   </s:Body>
 </s:Envelope>
 
-2021-07-25 14:32:54,444 [9] INFO  - Structural Validation: True
-2021-07-25 14:32:54,450 [9] INFO  - Step 'CreateFlightOrder' ended successfully
-2021-07-25 14:32:54,453 [9] INFO  - Step 'Iteration 2' ended successfully
-2021-07-25 14:32:54,456 [9] INFO  - Step 'Iteration 3' : Step 'Iteration 3' started
-2021-07-25 14:32:54,460 [9] INFO  - Step 'GetFlights' : Step 'GetFlights' started
-2021-07-25 14:32:54,472 [9] INFO  - 
+2021-07-27 18:21:50,466 [9] INFO  - Structural Validation: True
+2021-07-27 18:21:50,474 [9] INFO  - Step 'CreateFlightOrder' ended successfully
+2021-07-27 18:21:50,477 [9] INFO  - Step 'Iteration 2' ended successfully
+2021-07-27 18:21:50,480 [9] INFO  - Step 'Iteration 3' : Step 'Iteration 3' started
+2021-07-27 18:21:50,485 [9] INFO  - Step 'GetFlights' : Step 'GetFlights' started
+2021-07-27 18:21:50,490 [9] INFO  - 
 Request:
 
 <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
@@ -338,9 +338,9 @@ Request:
   </Body>
 </Envelope>
 
-2021-07-25 14:32:54,477 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
-2021-07-25 14:32:54,484 [9] INFO  - Returning the response to the previous channel
-2021-07-25 14:32:54,488 [9] INFO  - 
+2021-07-27 18:21:50,495 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
+2021-07-27 18:21:50,502 [9] INFO  - Returning the response to the previous channel
+2021-07-27 18:21:50,511 [9] INFO  - 
 Response:
 
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -442,10 +442,10 @@ Response:
   </s:Body>
 </s:Envelope>
 
-2021-07-25 14:32:54,497 [9] INFO  - Structural Validation: True
-2021-07-25 14:32:54,503 [9] INFO  - Step 'GetFlights' ended successfully
-2021-07-25 14:32:54,505 [9] INFO  - Step 'CreateFlightOrder' : Step 'CreateFlightOrder' started
-2021-07-25 14:32:54,512 [9] INFO  - 
+2021-07-27 18:21:50,521 [9] INFO  - Structural Validation: True
+2021-07-27 18:21:50,528 [9] INFO  - Step 'GetFlights' ended successfully
+2021-07-27 18:21:50,531 [9] INFO  - Step 'CreateFlightOrder' : Step 'CreateFlightOrder' started
+2021-07-27 18:21:50,538 [9] INFO  - 
 Request:
 
 <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
@@ -462,25 +462,25 @@ Request:
   </Body>
 </Envelope>
 
-2021-07-25 14:32:54,519 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
-2021-07-25 14:32:54,534 [9] INFO  - Returning the response to the previous channel
-2021-07-25 14:32:54,536 [9] INFO  - 
+2021-07-27 18:21:50,551 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
+2021-07-27 18:21:50,569 [9] INFO  - Returning the response to the previous channel
+2021-07-27 18:21:50,572 [9] INFO  - 
 Response:
 
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Body>
     <CreateFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
       <CreateFlightOrderResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-        <OrderNumber>747</OrderNumber>
+        <OrderNumber>795</OrderNumber>
         <TotalPrice>1794.7</TotalPrice>
       </CreateFlightOrderResult>
     </CreateFlightOrderResponse>
   </s:Body>
 </s:Envelope>
 
-2021-07-25 14:32:54,545 [9] INFO  - Structural Validation: True
-2021-07-25 14:32:54,550 [9] INFO  - Step 'CreateFlightOrder' ended successfully
-2021-07-25 14:32:54,556 [9] INFO  - Step 'Iteration 3' ended successfully
-2021-07-25 14:32:54,561 [9] INFO  - Step 'Test Flow' ended successfully
-2021-07-25 14:32:54,563 [9] INFO  - Step 'End' : Step 'End' started
-2021-07-25 14:32:54,579 [9] INFO  - Step 'End' ended successfully
+2021-07-27 18:21:50,580 [9] INFO  - Structural Validation: True
+2021-07-27 18:21:50,585 [9] INFO  - Step 'CreateFlightOrder' ended successfully
+2021-07-27 18:21:50,589 [9] INFO  - Step 'Iteration 3' ended successfully
+2021-07-27 18:21:50,601 [9] INFO  - Step 'Test Flow' ended successfully
+2021-07-27 18:21:50,604 [9] INFO  - Step 'End' : Step 'End' started
+2021-07-27 18:21:50,692 [9] INFO  - Step 'End' ended successfully
