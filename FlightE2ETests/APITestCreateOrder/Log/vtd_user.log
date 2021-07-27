@@ -1,0 +1,486 @@
+2021-07-25 14:32:51,800 [1] INFO  - Loaded appender: FileAppenderInternal
+2021-07-25 14:32:51,830 [1] INFO  - Loaded appender: FileAppenderExternal
+2021-07-25 14:32:51,830 [1] INFO  - Loaded appender: UserLoggerAppender
+2021-07-25 14:32:51,831 [1] INFO  - Loaded appender: FileAppenderInternal
+2021-07-25 14:32:51,831 [1] INFO  - Loaded appender: FileAppenderExternal
+2021-07-25 14:32:51,832 [1] INFO  - Loaded appender: UserLoggerAppender
+2021-07-25 14:32:53,520 [9] INFO  - Step 'Start' : Step 'Start' started
+2021-07-25 14:32:53,605 [9] INFO  - Step 'Start' ended successfully
+2021-07-25 14:32:53,616 [9] INFO  - Step 'Test Flow' : Step 'Test Flow' started
+2021-07-25 14:32:53,628 [9] INFO  - Step 'Iteration 1' : Step 'Iteration 1' started
+2021-07-25 14:32:53,632 [9] INFO  - Step 'GetFlights' : Step 'GetFlights' started
+2021-07-25 14:32:53,663 [9] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <GetFlights xmlns="HP.SOAQ.SampleApp">
+      <DepartureCity>Denver</DepartureCity>
+      <ArrivalCity>Frankfurt</ArrivalCity>
+      <FlightDate>2022-02-22T00:00:00+02:00</FlightDate>
+    </GetFlights>
+  </Body>
+</Envelope>
+
+2021-07-25 14:32:53,947 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
+2021-07-25 14:32:54,139 [9] INFO  - Returning the response to the previous channel
+2021-07-25 14:32:54,146 [9] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <GetFlightsResponse xmlns="HP.SOAQ.SampleApp">
+      <GetFlightsResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>08:53 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>08:09 AM</DepartureTime>
+          <FlightNumber>14686</FlightNumber>
+          <Price>179.47</Price>
+        </Flight>
+        <Flight>
+          <Airline>AF</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>10:00 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>08:00 AM</DepartureTime>
+          <FlightNumber>15779</FlightNumber>
+          <Price>161.9</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>08:45 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>08:00 AM</DepartureTime>
+          <FlightNumber>15781</FlightNumber>
+          <Price>105.4</Price>
+        </Flight>
+        <Flight>
+          <Airline>AF</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>11:30 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>08:00 AM</DepartureTime>
+          <FlightNumber>15782</FlightNumber>
+          <Price>173.47</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>11:09 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>10:24 AM</DepartureTime>
+          <FlightNumber>15785</FlightNumber>
+          <Price>104</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>01:33 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>12:48 PM</DepartureTime>
+          <FlightNumber>15789</FlightNumber>
+          <Price>106</Price>
+        </Flight>
+        <Flight>
+          <Airline>DL</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>04:42 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>03:12 PM</DepartureTime>
+          <FlightNumber>15792</FlightNumber>
+          <Price>178.47</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>03:57 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>03:12 PM</DepartureTime>
+          <FlightNumber>15793</FlightNumber>
+          <Price>105.3</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>06:29 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>05:45 PM</DepartureTime>
+          <FlightNumber>16102</FlightNumber>
+          <Price>110.8</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>01:41 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>12:57 PM</DepartureTime>
+          <FlightNumber>16396</FlightNumber>
+          <Price>120.4</Price>
+        </Flight>
+      </GetFlightsResult>
+    </GetFlightsResponse>
+  </s:Body>
+</s:Envelope>
+
+2021-07-25 14:32:54,189 [9] INFO  - Structural Validation: True
+2021-07-25 14:32:54,200 [9] INFO  - Step 'GetFlights' ended successfully
+2021-07-25 14:32:54,203 [9] INFO  - Step 'CreateFlightOrder' : Step 'CreateFlightOrder' started
+2021-07-25 14:32:54,208 [9] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Body>
+    <CreateFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <FlightOrder>
+        <Class>Business</Class>
+        <CustomerName>john</CustomerName>
+        <DepartureDate>2022-02-22T00:00:00+02:00</DepartureDate>
+        <FlightNumber>14686</FlightNumber>
+        <NumberOfTickets>5</NumberOfTickets>
+      </FlightOrder>
+    </CreateFlightOrder>
+  </Body>
+</Envelope>
+
+2021-07-25 14:32:54,213 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
+2021-07-25 14:32:54,248 [9] INFO  - Returning the response to the previous channel
+2021-07-25 14:32:54,251 [9] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <CreateFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <CreateFlightOrderResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <OrderNumber>745</OrderNumber>
+        <TotalPrice>1794.7</TotalPrice>
+      </CreateFlightOrderResult>
+    </CreateFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2021-07-25 14:32:54,259 [9] INFO  - Structural Validation: True
+2021-07-25 14:32:54,267 [9] INFO  - Step 'CreateFlightOrder' ended successfully
+2021-07-25 14:32:54,271 [9] INFO  - Step 'Iteration 1' ended successfully
+2021-07-25 14:32:54,273 [9] INFO  - Step 'Iteration 2' : Step 'Iteration 2' started
+2021-07-25 14:32:54,279 [9] INFO  - Step 'GetFlights' : Step 'GetFlights' started
+2021-07-25 14:32:54,282 [9] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <GetFlights xmlns="HP.SOAQ.SampleApp">
+      <DepartureCity>Denver</DepartureCity>
+      <ArrivalCity>Frankfurt</ArrivalCity>
+      <FlightDate>2022-02-22T00:00:00+02:00</FlightDate>
+    </GetFlights>
+  </Body>
+</Envelope>
+
+2021-07-25 14:32:54,287 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
+2021-07-25 14:32:54,294 [9] INFO  - Returning the response to the previous channel
+2021-07-25 14:32:54,297 [9] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <GetFlightsResponse xmlns="HP.SOAQ.SampleApp">
+      <GetFlightsResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>08:53 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>08:09 AM</DepartureTime>
+          <FlightNumber>14686</FlightNumber>
+          <Price>179.47</Price>
+        </Flight>
+        <Flight>
+          <Airline>AF</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>10:00 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>08:00 AM</DepartureTime>
+          <FlightNumber>15779</FlightNumber>
+          <Price>161.9</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>08:45 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>08:00 AM</DepartureTime>
+          <FlightNumber>15781</FlightNumber>
+          <Price>105.4</Price>
+        </Flight>
+        <Flight>
+          <Airline>AF</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>11:30 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>08:00 AM</DepartureTime>
+          <FlightNumber>15782</FlightNumber>
+          <Price>173.47</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>11:09 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>10:24 AM</DepartureTime>
+          <FlightNumber>15785</FlightNumber>
+          <Price>104</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>01:33 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>12:48 PM</DepartureTime>
+          <FlightNumber>15789</FlightNumber>
+          <Price>106</Price>
+        </Flight>
+        <Flight>
+          <Airline>DL</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>04:42 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>03:12 PM</DepartureTime>
+          <FlightNumber>15792</FlightNumber>
+          <Price>178.47</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>03:57 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>03:12 PM</DepartureTime>
+          <FlightNumber>15793</FlightNumber>
+          <Price>105.3</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>06:29 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>05:45 PM</DepartureTime>
+          <FlightNumber>16102</FlightNumber>
+          <Price>110.8</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>01:41 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>12:57 PM</DepartureTime>
+          <FlightNumber>16396</FlightNumber>
+          <Price>120.4</Price>
+        </Flight>
+      </GetFlightsResult>
+    </GetFlightsResponse>
+  </s:Body>
+</s:Envelope>
+
+2021-07-25 14:32:54,306 [9] INFO  - Structural Validation: True
+2021-07-25 14:32:54,311 [9] INFO  - Step 'GetFlights' ended successfully
+2021-07-25 14:32:54,395 [9] INFO  - Step 'CreateFlightOrder' : Step 'CreateFlightOrder' started
+2021-07-25 14:32:54,407 [9] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Body>
+    <CreateFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <FlightOrder>
+        <Class>Business</Class>
+        <CustomerName>john</CustomerName>
+        <DepartureDate>2022-02-22T00:00:00+02:00</DepartureDate>
+        <FlightNumber>14686</FlightNumber>
+        <NumberOfTickets>5</NumberOfTickets>
+      </FlightOrder>
+    </CreateFlightOrder>
+  </Body>
+</Envelope>
+
+2021-07-25 14:32:54,413 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
+2021-07-25 14:32:54,432 [9] INFO  - Returning the response to the previous channel
+2021-07-25 14:32:54,435 [9] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <CreateFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <CreateFlightOrderResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <OrderNumber>746</OrderNumber>
+        <TotalPrice>1794.7</TotalPrice>
+      </CreateFlightOrderResult>
+    </CreateFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2021-07-25 14:32:54,444 [9] INFO  - Structural Validation: True
+2021-07-25 14:32:54,450 [9] INFO  - Step 'CreateFlightOrder' ended successfully
+2021-07-25 14:32:54,453 [9] INFO  - Step 'Iteration 2' ended successfully
+2021-07-25 14:32:54,456 [9] INFO  - Step 'Iteration 3' : Step 'Iteration 3' started
+2021-07-25 14:32:54,460 [9] INFO  - Step 'GetFlights' : Step 'GetFlights' started
+2021-07-25 14:32:54,472 [9] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <GetFlights xmlns="HP.SOAQ.SampleApp">
+      <DepartureCity>Denver</DepartureCity>
+      <ArrivalCity>Frankfurt</ArrivalCity>
+      <FlightDate>2022-02-22T00:00:00+02:00</FlightDate>
+    </GetFlights>
+  </Body>
+</Envelope>
+
+2021-07-25 14:32:54,477 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
+2021-07-25 14:32:54,484 [9] INFO  - Returning the response to the previous channel
+2021-07-25 14:32:54,488 [9] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <GetFlightsResponse xmlns="HP.SOAQ.SampleApp">
+      <GetFlightsResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>08:53 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>08:09 AM</DepartureTime>
+          <FlightNumber>14686</FlightNumber>
+          <Price>179.47</Price>
+        </Flight>
+        <Flight>
+          <Airline>AF</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>10:00 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>08:00 AM</DepartureTime>
+          <FlightNumber>15779</FlightNumber>
+          <Price>161.9</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>08:45 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>08:00 AM</DepartureTime>
+          <FlightNumber>15781</FlightNumber>
+          <Price>105.4</Price>
+        </Flight>
+        <Flight>
+          <Airline>AF</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>11:30 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>08:00 AM</DepartureTime>
+          <FlightNumber>15782</FlightNumber>
+          <Price>173.47</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>11:09 AM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>10:24 AM</DepartureTime>
+          <FlightNumber>15785</FlightNumber>
+          <Price>104</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>01:33 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>12:48 PM</DepartureTime>
+          <FlightNumber>15789</FlightNumber>
+          <Price>106</Price>
+        </Flight>
+        <Flight>
+          <Airline>DL</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>04:42 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>03:12 PM</DepartureTime>
+          <FlightNumber>15792</FlightNumber>
+          <Price>178.47</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>03:57 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>03:12 PM</DepartureTime>
+          <FlightNumber>15793</FlightNumber>
+          <Price>105.3</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>06:29 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>05:45 PM</DepartureTime>
+          <FlightNumber>16102</FlightNumber>
+          <Price>110.8</Price>
+        </Flight>
+        <Flight>
+          <Airline>AA</Airline>
+          <ArrivalCity>Frankfurt</ArrivalCity>
+          <ArrivalTime>01:41 PM</ArrivalTime>
+          <DepartureCity>Denver</DepartureCity>
+          <DepartureTime>12:57 PM</DepartureTime>
+          <FlightNumber>16396</FlightNumber>
+          <Price>120.4</Price>
+        </Flight>
+      </GetFlightsResult>
+    </GetFlightsResponse>
+  </s:Body>
+</s:Envelope>
+
+2021-07-25 14:32:54,497 [9] INFO  - Structural Validation: True
+2021-07-25 14:32:54,503 [9] INFO  - Step 'GetFlights' ended successfully
+2021-07-25 14:32:54,505 [9] INFO  - Step 'CreateFlightOrder' : Step 'CreateFlightOrder' started
+2021-07-25 14:32:54,512 [9] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Body>
+    <CreateFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <FlightOrder>
+        <Class>Business</Class>
+        <CustomerName>john</CustomerName>
+        <DepartureDate>2022-02-22T00:00:00+02:00</DepartureDate>
+        <FlightNumber>14686</FlightNumber>
+        <NumberOfTickets>5</NumberOfTickets>
+      </FlightOrder>
+    </CreateFlightOrder>
+  </Body>
+</Envelope>
+
+2021-07-25 14:32:54,519 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
+2021-07-25 14:32:54,534 [9] INFO  - Returning the response to the previous channel
+2021-07-25 14:32:54,536 [9] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <CreateFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <CreateFlightOrderResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <OrderNumber>747</OrderNumber>
+        <TotalPrice>1794.7</TotalPrice>
+      </CreateFlightOrderResult>
+    </CreateFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2021-07-25 14:32:54,545 [9] INFO  - Structural Validation: True
+2021-07-25 14:32:54,550 [9] INFO  - Step 'CreateFlightOrder' ended successfully
+2021-07-25 14:32:54,556 [9] INFO  - Step 'Iteration 3' ended successfully
+2021-07-25 14:32:54,561 [9] INFO  - Step 'Test Flow' ended successfully
+2021-07-25 14:32:54,563 [9] INFO  - Step 'End' : Step 'End' started
+2021-07-25 14:32:54,579 [9] INFO  - Step 'End' ended successfully
