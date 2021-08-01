@@ -1,0 +1,8 @@
+﻿ 
+Function RecoveryFunctionLogin(Object)
+ Browser("Unsupported Browser").Navigate Parameter("url")
+Browser("Unsupported Browser").Page("Unsupported Browser").WebEdit("WebEdit_2").Set Parameter("user_name")
+Browser("Unsupported Browser").Page("Unsupported Browser").WebEdit("WebEdit").Set Parameter("password")
+Browser("Unsupported Browser").Page("Unsupported Browser").WebButton("Login").Click
+End Function 
+ 
