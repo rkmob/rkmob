@@ -1,4 +1,9 @@
-﻿If Browser("Dashboard - Advantage").Page("Dashboard - Advantage").WebButton("WebButton").Exist Then
+﻿systemUtil.CloseProcessByName ("firefox.exe")
+systemUtil.Run ("C:\Program Files\Mozilla Firefox\firefox.exe")
+
+Browser("Home - Advantage Bank").Navigate "https://ci.advantageonlinebanking.com/dashboard" @@ hightlight id_;_1382620_;_script infofile_;_ZIP::ssf36.xml_;_
+
+If Browser("Dashboard - Advantage").Page("Dashboard - Advantage").WebButton("WebButton").Exist Then
 	Browser("Dashboard - Advantage").Page("Dashboard - Advantage").WebButton("WebButton").Click 5,5
        Browser("Dashboard - Advantage").Page("Dashboard - Advantage").WebMenu("My Profile Managment console").Select "Logout"
 End If
