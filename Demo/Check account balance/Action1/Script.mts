@@ -1,5 +1,10 @@
-﻿If Browser("Accounts - Advantage Bank").Page("Dashboard - Advantage").WebButton("WebButton").Exist Then
-	 @@ script infofile_;_ZIP::ssf29.xml_;_
+﻿systemUtil.CloseProcessByName ("firefox.exe")
+systemUtil.Run ("C:\Program Files\Mozilla Firefox\firefox.exe")
+
+Browser("Home - Advantage Bank").Navigate "https://ci.advantageonlinebanking.com/dashboard" @@ hightlight id_;_1382620_;_script infofile_;_ZIP::ssf36.xml_;_
+
+If Browser("Accounts - Advantage Bank").Page("Dashboard - Advantage").WebButton("WebButton").Exist Then
+ @@ script infofile_;_ZIP::ssf29.xml_;_
 Browser("Accounts - Advantage Bank").Page("Dashboard - Advantage").WebButton("WebButton").Click 5,5 @@ script infofile_;_ZIP::ssf30.xml_;_
 Browser("Accounts - Advantage Bank").Page("Dashboard - Advantage").WebMenu("My Profile Logout").Select "Logout" @@ script infofile_;_ZIP::ssf31.xml_;_
  @@ script infofile_;_ZIP::ssf33.xml_;_
